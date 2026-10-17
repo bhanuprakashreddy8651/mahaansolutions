@@ -1,0 +1,6 @@
+import {db} from '@/lib/db';
+import {isAdmin,sameOrigin} from '@/lib/security';
+import {z} from 'zod';
+const schema=z.object({key:z.enum(['company','services']),value:z.union([z.record(z.string().max(5000)),z.array(z.object({slug:z.string().max(100),approved:z.boolean(),title:z.string().max(150),description:z.string().max(5000)})).max(30)])});
+export async function GET(){if(!await isAdmin())return Response.json({error:'Authentication required.'},{status:401});try{return Response.json({content:await db.content.findMany()},{headers:{'Cache-Control':'no-store'}})}catch{return Response.json({error:'Content store unavailable.'},{status:503})}}
+export async function PUT(request:Request){if(!sameOrigin(request)||!await isAdmin())return Response.json({error:'Not authorised.'},{status:403});try{const raw=await request.text();if(raw.length>100000)return Response.json({error:'Request too large.'},{status:413});const result=schema.safeParse(JSON.parse(raw));if(!result.success)return Response.json({error:'Invalid content format.'},{status:400});await db.content.upsert({where:{key:result.data.key},create:result.data,update:{value:result.data.value}});return Response.json({ok:true})}catch{return Response.json({error:'Could not save content.'},{status:400})}}

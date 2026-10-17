@@ -1,0 +1,2 @@
+import Link from 'next/link';import Nav from '@/components/Nav';import Footer from '@/components/Footer';
+export default function NotFound(){return <><Nav/><main id="main" className="legal"><span className="eyebrow">404 / A DIFFERENT DIRECTION</span><h1 style={{marginTop:30}}>Let’s find<br/>your way back.</h1><p>This page is not available. Explore our expertise or start a new conversation.</p><Link className="button button-gold" style={{marginTop:30}} href="/">Return to the portfolio ↗</Link></main><Footer/></>}

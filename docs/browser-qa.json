@@ -1,0 +1,17 @@
+{
+  "desktop": "1440×1000",
+  "mobile": "390×844",
+  "confirmedServiceCount": 3,
+  "checks": [
+    "service filtering",
+    "process tabs",
+    "project dialog + Escape",
+    "six routes",
+    "admin access boundary",
+    "enquiry origin boundary",
+    "mobile navigation",
+    "no mobile horizontal overflow",
+    "project brief download"
+  ],
+  "browserErrors": []
+}

@@ -1,0 +1,5 @@
+import {db} from '@/lib/db';
+import {isAdmin,sameOrigin} from '@/lib/security';
+import {leadUpdateSchema} from '@/lib/validation';
+export async function PATCH(request:Request,{params}:{params:Promise<{id:string}>}){if(!sameOrigin(request)||!await isAdmin())return Response.json({error:'Not authorised.'},{status:403});try{const raw=await request.text();if(raw.length>15000)return Response.json({error:'Request too large.'},{status:413});const result=leadUpdateSchema.safeParse(JSON.parse(raw));if(!result.success)return Response.json({error:'Invalid status or notes.'},{status:400});await db.lead.update({where:{id:(await params).id},data:result.data});return Response.json({ok:true})}catch{return Response.json({error:'Could not update enquiry.'},{status:400})}}
+export async function DELETE(request:Request,{params}:{params:Promise<{id:string}>}){if(!sameOrigin(request)||!await isAdmin())return Response.json({error:'Not authorised.'},{status:403});try{await db.lead.delete({where:{id:(await params).id}});return Response.json({ok:true})}catch{return Response.json({error:'Could not delete enquiry.'},{status:400})}}

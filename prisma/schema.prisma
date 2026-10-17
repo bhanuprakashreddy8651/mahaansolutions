@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+model Lead {
+  id String @id @default(cuid())
+  reference String @unique
+  name String
+  business String?
+  email String
+  phone String
+  service String
+  description String
+  budget String?
+  preferredContact String
+  consentAt DateTime @default(now())
+  status String @default("NEW")
+  notes String @default("")
+  notified Boolean @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@index([createdAt])
+  @@index([status])
+}
+model RateLimit {
+  key String @id
+  count Int @default(1)
+  resetAt DateTime
+}
+model Content {
+  key String @id
+  value Json
+  updatedAt DateTime @updatedAt
+}
