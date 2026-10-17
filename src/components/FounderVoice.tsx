@@ -12,7 +12,7 @@ export function FounderVoiceProvider({children}:{children:ReactNode}){
  const stop=useCallback(()=>{cancel();setEnabled(false);lastScene.current=null;setMessage('')},[cancel]);
  const registerVideo=useCallback((id:FounderScene,video:HTMLVideoElement|null)=>{if(video)players.current.set(id,video);else players.current.delete(id)},[]);
  useEffect(()=>{setSupported('speechSynthesis' in window||Object.values(founderScenes).some(s=>!!s.video));const onVisibility=()=>{if(document.hidden)stop()};document.addEventListener('visibilitychange',onVisibility);return()=>{document.removeEventListener('visibilitychange',onVisibility);if('speechSynthesis' in window)window.speechSynthesis.cancel();players.current.forEach(v=>v.pause())}},[stop]);
- const play=useCallback((id:FounderScene)=>{lastScene.current=null;setScene(id);setEnabled(true);setMessage('');setRevision(v=>v+1)},[]);
+ const play=useCallback((id:FounderScene)=>{lastScene.current=null;setScene(id);setEnabled(true);setMessage('');if(id==='intro')window.dispatchEvent(new Event('founder:replay'));setRevision(v=>v+1)},[]);
  const selectScene=useCallback((id:FounderScene)=>setScene(id),[]);
  useEffect(()=>{if(!enabled||lastScene.current===scene)return;cancel();lastScene.current=scene;const token=generation.current;
    const timer=window.setTimeout(()=>{
@@ -23,7 +23,7 @@ export function FounderVoiceProvider({children}:{children:ReactNode}){
     const voices=window.speechSynthesis.getVoices();utterance.voice=voices.find(v=>v.lang==='en-IN')||voices.find(v=>v.lang.startsWith('en-GB'))||voices.find(v=>v.lang.startsWith('en'))||null;
     utterance.onstart=()=>{if(token===generation.current)setPlaying(true)};utterance.onend=()=>{if(token===generation.current)setPlaying(false)};utterance.onerror=e=>{if(token===generation.current&&e.error!=='canceled'&&e.error!=='interrupted'){setPlaying(false);setMessage('Voice playback could not start. You can read the transcript.');setEnabled(false)}};
     window.speechSynthesis.speak(utterance);
-   },160);return()=>{clearTimeout(timer);cancel()};
+   },scene==='intro'&&!matchMedia('(prefers-reduced-motion:reduce)').matches?1200:160);return()=>{clearTimeout(timer);cancel()};
  },[enabled,scene,cancel,revision]);
  return <Voice.Provider value={{scene,enabled,playing,supported,message,selectScene,play,stop,markEnded:()=>setPlaying(false),registerVideo}}>{children}{enabled&&<aside className="voice-tour-dock" aria-label="Voice tour controls"><div className={`voice-wave ${playing?'is-speaking':''}`} aria-hidden="true">{[0,1,2,3,4].map(i=><i key={i}/>)}</div><div><small>ENGLISH VOICE TOUR</small><strong>{founderScenes[scene].title}</strong></div><button onClick={()=>play(scene)} aria-label="Replay current narration"><RotateCcw size={15}/></button><button onClick={stop} aria-label="Stop voice tour"><X size={18}/></button></aside>}</Voice.Provider>
 }

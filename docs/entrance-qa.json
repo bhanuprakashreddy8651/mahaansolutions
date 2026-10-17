@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "no speech before landing",
+    "walking phase after landing",
+    "speech during crossing",
+    "left-to-right position increases",
+    "settled introduction",
+    "reduced motion"
+  ],
+  "firstX": 737.2259521484375,
+  "secondX": 830.263916015625
+}

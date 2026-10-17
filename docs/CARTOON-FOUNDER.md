@@ -19,3 +19,9 @@ FounderPuppet.tsx now renders a textured triangle mesh from the likeness artwork
 This is a local 2D mesh puppet, not a fully modeled 3D body. Mouth motion is stylized and playback-driven, not phoneme-accurate lip sync. The original artwork is retained and animated at runtime.
 
 scripts/puppet-qa.cjs compares actual canvas pixels across frames, checks narration-to-mouth state, service scenes, frozen pixels on pause, reduced motion, and mobile overflow. Browser narration is stubbed in this test to make playback-state testing deterministic. docs/founder-motion-demo.webm records the live canvas, showing actual motion. The earlier scripts/cartoon-qa.cjs checks the superseded still-pose version; use puppet-qa.cjs for the current renderer.
+
+## Homepage landing, crossing and speech
+
+The introduction button now replays a 5.2-second entrance: land at the left (0–1.1 seconds), cross the stage with alternating leg movement (1.1–4.8 seconds), then settle at the right. Optional English browser speech begins 1.2 seconds after the button press, following landing and during the crossing. It does not autoplay audio on first load. Reduced-motion skips the crossing and plays speech without the entrance delay.
+
+scripts/entrance-qa.cjs verifies delayed speech, walking state, increasing horizontal position, settled introduction and reduced motion. Existing puppet checks cover rendered-frame changes, speech state, services, pause and mobile overflow. Mouth motion remains stylized rather than phoneme-accurate.
