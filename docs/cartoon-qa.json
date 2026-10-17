@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "single persistent 3D canvas",
+    "hero arrival and visible render",
+    "three scroll service scenes",
+    "pause control",
+    "closing scene",
+    "mobile no overflow",
+    "reduced motion render",
+    "no browser exceptions"
+  ],
+  "errors": []
+}

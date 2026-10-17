@@ -1,5 +1,15 @@
 # Mahaan Solutions portfolio
 
+## Current version — company-first navy and gold
+
+The active homepage uses one founder appearance, a single-film integration, company-focused information, interactive brand artwork, animated marketing/CRM/software previews, and a brand-led closing section. Repeated founder portraits and the portrait style selector were removed from the active page. `src/styles/brand-v3.css` now follows representative colours sampled from the supplied logo: navy `#183048`, metallic gold `#d8a848`, deep blue backgrounds, and pearl-white surfaces. The light header keeps the navy subtitle legible.
+
+The user selected Google Flow and approved its image-rights prompt. One realistic entrance/self-introduction render was attempted. **Flow rejected it with its prominent-people policy check; no founder video exists.** Its refund message was shown, but refund completion was not verified. See `docs/FLOW-RENDER-STATUS.md` for the project link, exact status, pending shot sequence, and legitimate completion routes. The site deliberately remains in poster mode until an actual reviewed film is supplied.
+
+Active components: `HomeHero.tsx`, `FounderPerformance.tsx`, `CompanySections.tsx`, `CompanyCore.tsx`, `ServicesExperience.tsx`, and `SolutionVisual.tsx`. The earlier founder-gallery components remain in source history/reference but are not rendered on the homepage. `FounderPerformance` moves one actual video element from the hero to a small service dock when a film is configured; it does not duplicate the person in every section. CompanyCore has a persistent CSS brand fallback for devices or captures where the WebGL layer cannot be displayed.
+
+Checks for the active design: `node scripts/company-qa.cjs` against localhost:3001, in addition to the existing enquiry/security tests and browser workflow checks. The earlier `founder-qa.cjs` targets the superseded portrait-gallery design and should not be used to validate this version.
+
 Next.js App Router / React / strict TypeScript / Tailwind 4 / React Three Fiber / PostgreSQL + Prisma / Zod. A responsive editorial portfolio with the supplied founder portrait, optional WebGL orbit scene, three confirmed service routes, interactive concept previews, process tabs, FAQs, enquiry preparation, and protected administration.
 
 ## Run

@@ -1,5 +1,7 @@
 # Founder film: Google Flow production and integration
 
+> Current v3 status: Google Flow was opened and a founder entrance render was attempted after the user confirmed image rights. Flow rejected it with its prominent-people policy check; no video was created. See `FLOW-RENDER-STATUS.md` for the actual project, outcome and completion routes. The current homepage uses one founder appearance and company-led service visuals. The earlier three-portrait direction below is retained as reference material, not the active homepage specification. The current single-film player is `FounderPerformance.tsx`.
+
 ## Delivered and pending
 
 Implemented: three ImageGen portrait treatments from the supplied photograph, portrait style switching, a hero that recedes while scrolling, a smaller sticky service presenter, service-aware captions, an optional English voice tour, and a founder-led contact finale. Original photo preserved. These are generated likenesses and layered 2.5D effects, not a body scan or rigged 3D human.

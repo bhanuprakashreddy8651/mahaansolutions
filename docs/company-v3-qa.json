@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "one founder appearance only",
+    "unavailable film identified as poster",
+    "logo-compatible light header",
+    "marketing visual follows scroll",
+    "motion pause/resume",
+    "CRM visual follows scroll",
+    "verified company details",
+    "mobile no overflow",
+    "mobile sticky service preview",
+    "reduced motion fallback"
+  ],
+  "errors": [],
+  "founderFilm": "Not created: Google Flow rejected the generation under its prominent-people policy check."
+}

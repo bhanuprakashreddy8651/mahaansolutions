@@ -1,0 +1,6 @@
+'use client';
+import {Canvas,useFrame} from '@react-three/fiber';
+import {useRef} from 'react';
+import type {Group} from 'three';
+function Structure(){const group=useRef<Group>(null);useFrame(({clock,pointer},delta)=>{if(!group.current)return;group.current.rotation.y+=(pointer.x*.3+clock.elapsedTime*.045-group.current.rotation.y)*Math.min(delta*2,1);group.current.rotation.x+=(pointer.y*.15+.2-group.current.rotation.x)*Math.min(delta*2,1)});return <group ref={group} rotation={[.2,.5,0]}><mesh rotation={[.2,.4,.3]}><icosahedronGeometry args={[1.05,0]}/><meshStandardMaterial color="#163959" metalness={.8} roughness={.24}/></mesh>{[0,1,2].map((n)=><group key={n} rotation={[n*.8,.4+n*.7,n*.4]}><mesh><torusGeometry args={[1.65+n*.18,.026,12,160]}/><meshStandardMaterial color={n===1?'#f2d074':'#b48331'} metalness={.9} roughness={.23}/></mesh><mesh position={[1.65+n*.18,0,0]}><sphereGeometry args={[.12,24,24]}/><meshStandardMaterial color="#eabf57" metalness={.8} roughness={.2}/></mesh></group>)}</group>}
+export default function CompanyCore(){return <Canvas dpr={[1,1.5]} camera={{position:[0,0,6.5],fov:44}} gl={{alpha:true,antialias:true}} aria-hidden="true"><ambientLight intensity={1.4}/><directionalLight position={[4,5,5]} intensity={5} color="#ffdf94"/><pointLight position={[-4,-1,3]} intensity={30} color="#5d9bd3"/><Structure/></Canvas>}

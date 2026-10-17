@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import '@/styles/founder-experience.css';
+import '@/styles/brand-v3.css';
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title:{default:'Mahaan Solutions — Your Vision. Our Solutions.', template:'%s | Mahaan Solutions'},

@@ -1,7 +1,7 @@
 /** Add reviewed Google Flow exports here. Empty sources intentionally use the poster + optional browser narration. */
 export const founderScenes = {
-  intro: { title: 'Meet the founder', poster: '/images/founder/hero.webp', video: '', captions: '',
-    script: "Hello, I'm Pulluru Bhanu Prakash Reddy, founder of Mahaan Solutions Private Limited. We bring digital marketing, CRM development and maintenance, and software development together around your vision." },
+  intro: { title: 'Meet the founder', poster: '/images/founder/guide.webp', video: '', captions: '',
+    script: "Hello, I'm Pulluru Bhanu Prakash Reddy, founder of Mahaan Solutions Private Limited. We bring digital marketing, CRM development and maintenance, and software development together around your vision. If you’d like to explore our services, scroll down and take a look." },
   'software-development': { title: 'Software development', poster: '/images/founder/guide.webp', video: '', captions: '',
     script: 'Have an idea for a digital product? Let’s build software around your business.' },
   'digital-marketing': { title: 'Digital marketing', poster: '/images/founder/guide.webp', video: '', captions: '',
