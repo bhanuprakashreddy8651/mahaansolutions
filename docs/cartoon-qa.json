@@ -1,7 +1,7 @@
 {
   "checks": [
-    "single persistent 3D canvas",
-    "hero arrival and visible render",
+    "single persistent illustrated presenter",
+    "three loaded artwork poses and replay",
     "three scroll service scenes",
     "pause control",
     "closing scene",

@@ -1,11 +1,13 @@
-# Cartoon founder presentation
+# Founder illustrated presenter
 
-The active website uses one procedural Three.js cartoon character inspired by the supplied founder photo: black wavy hair, full beard, warm brown skin, lean proportions and navy/gold clothing. It is a stylized interpretation, not a scan or an exact facial likeness.
+The active founder uses the generated likeness artwork rather than the previous procedural Three.js model. Face, hair, beard, lean build and navy suit follow the detailed reference. Three poses welcome visitors, demonstrate services and invite contact.
 
-The locally animated character arrives, waves, breathes, blinks, follows the pointer subtly and gestures beside services. One persistent canvas tracks hero, service and closing anchors. Service chapters update the optional English narration. Speaking motion follows playback state; it does not implement phoneme-level lip sync. Reduced-motion preference stops character motion; the service preview also has a pause control.
+One persistent DOM presenter interpolates position and size between hero, services and closing. Poses crossfade. Entrance replay, subtle breathing motion, captions and optional English browser narration provide the presentation. Pause and reduced-motion preferences stop decorative motion. No WebGL is required.
 
-`public/images/founder/cartoon.png` is a generated visual concept and WebGL fallback, not the rigged 3D model. The rig is authored in `src/components/CartoonFounder.tsx`. No company background films are used. No cartoon likeness was submitted to Google Flow to bypass its prior identity rejection.
+This is a 2D illustrated presentation with motion, not a rigged 3D character or lip-synced video. The founder voice is not recorded or cloned. No likeness was submitted to Google Flow to bypass its previous rejection.
 
-Verification: `node scripts/cartoon-qa.cjs` checks the persistent renderer, three service scenes, closing, pause, mobile overflow and browser errors. Screenshots: docs/cartoon-hero.png, cartoon-services.png, cartoon-closing.png, cartoon-mobile.png. Existing validation/security suite: 12 passing tests.
+Assets: public/images/founder/presenter-sheet.png and presenter-{welcome,present,invite}.webp. Built-in ImageGen produced the artwork. Sharp crops and optimizes sprites, preserving alpha. The prompt is in docs/PRESENTER-PROMPT.txt.
 
-The hosted static preview retains direct email, phone and WhatsApp contact. Database enquiries require the server environment and configured credentials; the static enquiry form prepares a downloadable brief.
+Verification: scripts/cartoon-qa.cjs checks loaded artwork, removal of the primitive canvas, entrance replay, all three service scenes, closing, pause, mobile overflow and browser errors. Screenshots in docs/cartoon-*.png show the tested appearance.
+
+The static enquiry form prepares a downloadable brief. Direct email, phone and WhatsApp contact remain available. Database submission needs configured server credentials.
