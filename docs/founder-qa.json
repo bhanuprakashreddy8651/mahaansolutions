@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "no audio without opt-in",
+    "portrait style selection",
+    "voice start/replay/stop",
+    "hero shrink on scroll",
+    "service-aware captions",
+    "voice follows service scroll",
+    "closing contact CTA",
+    "mobile no overflow",
+    "mobile sticky presenter",
+    "reduced-motion fallback"
+  ],
+  "browserErrors": [],
+  "voice": "mocked browser speech; actual device audio and Flow exports require device/media checks"
+}

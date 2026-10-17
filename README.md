@@ -37,9 +37,15 @@ Admin is at `/admin`. Authentication uses a signed eight-hour HttpOnly SameSite=
 
 Admin can search/filter up to 500 leads, update status and internal notes, export the displayed records as CSV, and permanently delete records for retention/privacy requests. CSV formula prefixes are neutralised. Review retention with the owner. Periodically delete expired `RateLimit` rows (`resetAt < NOW()`) and apply the approved lead retention schedule through an authenticated operations job. No campaign analytics or CRM integration is installed.
 
+## Founder presentation v2
+
+The home page now includes three AI-styled founder portraits, an interactive style selector, scroll-linked shrinking in the hero, a smaller sticky service presenter, service-aware captions, optional English browser narration, and a new closing contact scene. Browser narration is a generic device/browser voice, not a recording or clone of the founder. Google Flow videos are not included; the player and media-error fallbacks are ready for reviewed exports.
+
+Use `src/data/founder-scenes.ts` for scripts and video/caption sources. Components are split across `FounderHero.tsx`, `FounderVoice.tsx`, `ServiceShowcase.tsx`, and `FounderClosing.tsx`; presentation CSS is in `src/styles/founder-experience.css`. High-resolution references are saved in `output/flow-images/`; full image prompts are in `docs/FOUNDER-IMAGE-PROMPTS.json`.
+
 ## Visual/media notes
 
-The founder photograph is supplied by the user and is displayed without altering the face. Mouse movement adds mild depth; a separate procedural Three.js orbital scene loads on capable desktop browsers only. CSS supplies the visual fallback. Reduced-motion users receive static visuals. No Google Flow video, full human GLB, or logo was supplied. See `docs/FOUNDER-VIDEO.md` for shot prompts and integration instructions.
+The original founder photograph is preserved. The generated portraits change wardrobe, lighting and pose while aiming to preserve identity; they are styled likenesses, not an exact human reconstruction. Mouse movement adds mild depth; procedural Three.js orbits load on capable desktop browsers only. Reduced-motion users get static visuals. The supplied logo has an edited derivative. See `docs/FOUNDER-VIDEO.md` for Google Flow shot prompts, English scripts, and video integration instructions.
 
 ## Hosted preview
 
