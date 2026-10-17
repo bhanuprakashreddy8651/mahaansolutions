@@ -11,3 +11,11 @@ Assets: public/images/founder/presenter-sheet.png and presenter-{welcome,present
 Verification: scripts/cartoon-qa.cjs checks loaded artwork, removal of the primitive canvas, entrance replay, all three service scenes, closing, pause, mobile overflow and browser errors. Screenshots in docs/cartoon-*.png show the tested appearance.
 
 The static enquiry form prepares a downloadable brief. Direct email, phone and WhatsApp contact remain available. Database submission needs configured server credentials.
+
+## Continuous puppet animation update
+
+FounderPuppet.tsx now renders a textured triangle mesh from the likeness artwork. Weighted deformation moves the wave independently around the elbow, nods the head, shifts body weight, and moves the service-presenting hand. Brief eyelid closures and playback-driven mouth shapes add facial motion. A CSS landing sequence handles entrance; the character continues animating afterward. No video service or identity filter workaround is used.
+
+This is a local 2D mesh puppet, not a fully modeled 3D body. Mouth motion is stylized and playback-driven, not phoneme-accurate lip sync. The original artwork is retained and animated at runtime.
+
+scripts/puppet-qa.cjs compares actual canvas pixels across frames, checks narration-to-mouth state, service scenes, frozen pixels on pause, reduced motion, and mobile overflow. Browser narration is stubbed in this test to make playback-state testing deterministic. docs/founder-motion-demo.webm records the live canvas, showing actual motion. The earlier scripts/cartoon-qa.cjs checks the superseded still-pose version; use puppet-qa.cjs for the current renderer.

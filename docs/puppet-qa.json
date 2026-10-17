@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "visible pixel changes between frames",
+    "speaking connected to narration",
+    "three service scenes",
+    "pause freezes rendered pixels",
+    "reduced motion static",
+    "mobile no overflow"
+  ],
+  "errors": []
+}

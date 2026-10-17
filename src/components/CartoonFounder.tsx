@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
+import FounderPuppet from './FounderPuppet';
 import {useFounderVoice} from './FounderVoice';
 import type {FounderScene} from '@/data/founder-scenes';
 
@@ -23,5 +24,5 @@ export default function CartoonFounder(){
  };frame=requestAnimationFrame(tick);return()=>cancelAnimationFrame(frame);
  },[mounted]);
  const pose=scene==='intro'?'welcome':scene==='closing'?'invite':'present';
- return mounted?createPortal(<div ref={host} className={`founder-presenter cartoon-founder ${voice.playing?'is-speaking':''}`} data-scene={scene} data-pose={pose} aria-label="Illustrated founder presenter — Pulluru Bhanu Prakash Reddy"><div key={arrival} className="presenter-arrival"><div className="presenter-aura"/><div className="presenter-art">{poses.map((p,i)=><img key={p} className={`presenter-pose ${p===pose?'is-active':''}`} src={`/images/founder/presenter-${p}.webp`} alt={p===pose?`Pulluru Bhanu Prakash Reddy, illustrated ${p==='welcome'?'waving welcome':p==='present'?'demonstrating the services':'inviting you to start a conversation'}`:''} aria-hidden={p!==pose} fetchPriority={i===0?'high':'auto'} draggable={false}/>)}</div><div className="presenter-shadow"/></div><div className="presenter-caption"><span className="presenter-status"><i/>{voice.playing?'PRESENTING':scene==='intro'?'MEET BHANU':scene==='closing'?'LET’S BUILD SOMETHING':'LET ME SHOW YOU'}</span><span>{scene==='intro'?<>Your vision. Our solutions.<small>Scroll down — I’ll introduce our services. ↓</small></>:scene==='closing'?'Your next chapter starts with a conversation.':scene==='digital-marketing'?'Reach the people who matter.':scene==='software-development'?'Turn your idea into working software.':'Connect your customers and your team.'}</span></div></div>,document.body):null;
+ return mounted?createPortal(<div ref={host} className={`founder-presenter cartoon-founder ${voice.playing?'is-speaking':''}`} data-scene={scene} data-pose={pose} aria-label="Illustrated founder presenter — Pulluru Bhanu Prakash Reddy"><div key={arrival} className="presenter-arrival"><div className="presenter-aura"/><div className="presenter-art"><FounderPuppet pose={pose} speaking={voice.playing}/></div><div className="presenter-shadow"/></div><div className="presenter-caption"><span className="presenter-status"><i/>{voice.playing?'PRESENTING':scene==='intro'?'MEET BHANU':scene==='closing'?'LET’S BUILD SOMETHING':'LET ME SHOW YOU'}</span><span>{scene==='intro'?<>Your vision. Our solutions.<small>Scroll down — I’ll introduce our services. ↓</small></>:scene==='closing'?'Your next chapter starts with a conversation.':scene==='digital-marketing'?'Reach the people who matter.':scene==='software-development'?'Turn your idea into working software.':'Connect your customers and your team.'}</span></div></div>,document.body):null;
 }
