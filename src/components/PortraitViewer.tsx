@@ -1,0 +1,4 @@
+'use client';
+import {useRef} from 'react';
+import {Expand,X} from 'lucide-react';
+export default function PortraitViewer(){const dialog=useRef<HTMLDialogElement>(null);return <><button className="portrait-expand" onClick={()=>dialog.current?.showModal()} aria-label="View full founder portrait" title="View full portrait"><Expand size={18}/></button><dialog className="portrait-dialog" ref={dialog} aria-label="Full founder portrait" onClick={e=>{if(e.target===e.currentTarget)dialog.current?.close()}}><button className="portrait-dialog-close" onClick={()=>dialog.current?.close()} aria-label="Close full portrait"><X size={21}/></button><img src="/images/founder/studio-portrait-v2.webp" alt="Full AI-assisted editorial portrait of Pulluru Bhanu Prakash Reddy seated in an ivory studio"/><p>Pulluru Bhanu Prakash Reddy <span>Founder · Mahaan Solutions</span></p></dialog></>}

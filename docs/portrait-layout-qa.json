@@ -1,0 +1,36 @@
+{
+  "checks": [
+    "complete 4:5 image",
+    "desktop image within short viewport",
+    "no overflow",
+    "full portrait dialog",
+    "Escape and focus return"
+  ],
+  "results": [
+    {
+      "width": 1279,
+      "height": 648,
+      "imageBottom": 547.578125,
+      "fit": "contain"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "imageBottom": 757.1875,
+      "fit": "contain"
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "imageBottom": 499.578125,
+      "fit": "contain"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "imageBottom": 1182.53125,
+      "fit": "contain"
+    }
+  ],
+  "errors": []
+}
