@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "no puppet canvas or portal",
+    "one natural portrait",
+    "interactive journey stages",
+    "service-specific journey",
+    "service filter",
+    "contact finale",
+    "mobile no overflow",
+    "reduced motion"
+  ],
+  "errors": []
+}

@@ -6,7 +6,7 @@ import Footer from './Footer';
 import EnquiryForm from './EnquiryForm';
 import { steps, concepts } from '@/data/company';
 import HomeHero from './HomeHero';
-import CartoonFounder from './CartoonFounder';
+
 import {CompanyIntroduction,CompanyPrinciples,CompanyClosing} from './CompanySections';
 import ServicesExperience from './ServicesExperience';
 
@@ -16,7 +16,7 @@ export default function Experience(){
  useEffect(()=>{const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;let observer:IntersectionObserver|undefined;if(!reduce){observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('revealed');observer?.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer?.observe(el));}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('revealed'));const progress=()=>document.documentElement.style.setProperty('--scroll',`${(window.scrollY/(document.documentElement.scrollHeight-innerHeight))*100}%`);window.addEventListener('scroll',progress,{passive:true});return()=>{observer?.disconnect();window.removeEventListener('scroll',progress)}},[]);
  useEffect(()=>{if(!project)return;const close=(e:KeyboardEvent)=>{if(e.key==='Escape')setProject(null)};document.addEventListener('keydown',close);const prev=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.removeEventListener('keydown',close);document.body.style.overflow=prev}},[project]);
  const faqs=[['Where should we start?','Start with your idea, challenge, or goal. Use the project enquiry form below to prepare a brief. Your project scope and next steps are confirmed in a conversation.'],['Can I request a tailored solution?','Yes. Select “Not sure yet” in the enquiry form and describe what you have in mind. The right scope can be discussed around your priorities.'],['Are the showcase projects client work?','The current showcase contains original visual concepts, not completed client projects. Verified case studies will be added when approved company materials are available.'],['How are timelines and pricing decided?','A quote depends on scope, complexity, dependencies, and the agreed deliverables. No fixed turnaround or result is promised in this preview.']];
- return <FounderVoiceProvider><Nav/><CartoonFounder/><main id="main"><HomeHero/>
+ return <FounderVoiceProvider><Nav/><main id="main"><HomeHero/>
  <div className="discipline-strip"><span>DIGITAL EXPERIENCES</span><i>✳</i><span>BUSINESS POSSIBILITIES</span><i>✳</i><span>CREATIVE THINKING</span><i>✳</i><span>HUMAN CONNECTION</span><i>✳</i></div>
  <CompanyIntroduction/>
  <ServicesExperience/>
