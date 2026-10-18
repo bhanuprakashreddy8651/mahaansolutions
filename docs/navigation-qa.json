@@ -1,0 +1,74 @@
+{
+  "checks": [
+    "phone hidden on hero",
+    "correct tel link",
+    "round button after scroll",
+    "four nav anchors at desktop/tablet/mobile",
+    "contact anchor alignment",
+    "hidden again on return",
+    "no overflow or browser errors"
+  ],
+  "results": [
+    {
+      "width": 1440,
+      "section": "about",
+      "gap": 20
+    },
+    {
+      "width": 1440,
+      "section": "expertise",
+      "gap": 19.59375
+    },
+    {
+      "width": 1440,
+      "section": "showcase",
+      "gap": 20.390625
+    },
+    {
+      "width": 1440,
+      "section": "approach",
+      "gap": 20.21875
+    },
+    {
+      "width": 1024,
+      "section": "about",
+      "gap": 20
+    },
+    {
+      "width": 1024,
+      "section": "expertise",
+      "gap": 20
+    },
+    {
+      "width": 1024,
+      "section": "showcase",
+      "gap": 20.375
+    },
+    {
+      "width": 1024,
+      "section": "approach",
+      "gap": 20.484375
+    },
+    {
+      "width": 390,
+      "section": "about",
+      "gap": 16.3125
+    },
+    {
+      "width": 390,
+      "section": "expertise",
+      "gap": 16.34375
+    },
+    {
+      "width": 390,
+      "section": "showcase",
+      "gap": 15.828125
+    },
+    {
+      "width": 390,
+      "section": "approach",
+      "gap": 15.75
+    }
+  ],
+  "errors": []
+}
