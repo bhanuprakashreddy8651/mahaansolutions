@@ -1,6 +1,6 @@
 # Current portfolio experience
 
-The active design has removed CartoonFounder and FounderPuppet from the page. No body deformation, synthetic blinking, walking, or speaking face is rendered. The founder appears once in an editorial portrait using the supplied original photograph. The image is cropped and resized without retouching the face.
+The active design has removed CartoonFounder and FounderPuppet from the page. No body deformation, synthetic blinking, walking, or speaking face is rendered. The founder appears once in an AI-assisted seated editorial portrait generated from the supplied original photograph. It preserves recognisable features while changing wardrobe, pose, lighting and environment. It is a synthetic portrait, not an exact pixel-for-pixel reproduction or an actual studio photograph. Responsive WebP assets are used for the page; the original source and earlier portrait are retained.
 
 ServiceJourney provides three interactive stages for each confirmed service. Visitors can select a stage or advance through the approach. Its small transitions honor pause and reduced-motion preferences. The closing has a direct contact invitation instead of another founder character.
 

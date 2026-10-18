@@ -1,0 +1,20 @@
+/* Canonical palette derived from the supplied metallic logo.
+   Logo amber/shadows: #B07000 / #905000. Highlights: #FFD040.
+   Use the deeper gold for readable text; reserve highlights for decoration. */
+:root{--brand-navy:#183048;--brand-gold:#b07000;--gold-text:#945800;--gold-metal:#c38b16;--gold-highlight:#ffd040;--gold-soft:#fff1c4;--gold-border:#b0700038;--ink:#183048;--gold:#b07000;--paper:#fbf8f1;--brand-ivory:#fbf8f1;--brand-muted:#596b70}
+.home-hero h1,.section-heading h2,.company-intro h2,.principles-heading h2,.faq-section h2,.contact h2,.company-finale h2,.business-service-card h3,.portrait-credit strong,.journey-title h4{color:var(--brand-navy)}
+.home-hero h1>span{color:var(--gold-text);background:linear-gradient(105deg,#8e5100 0%,#b47700 48%,#925300 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2 em,.section-light h2 em,.contact h2 em,.company-finale h2 em,.company-promise strong{color:var(--gold-text)}
+.home-hero .eyebrow,.portrait-credit small,.journey-title small,.journey-detail>span,.solution-console-caption>span,.business-problem>span,.studio-caption{color:var(--gold-text)}
+.section-label,.section-light .section-label,.contact .section-label,.contact-dot,.service-card-top,.business-service-card .service-card-top{color:var(--brand-muted)}
+.live-dot,.performance-beats i{background:var(--gold-metal)}
+.button-gold,.nav-cta,.floating-contact{background:var(--brand-navy);border-color:var(--brand-navy);color:#fff9e8}
+.button-gold>svg,.nav-cta>svg,.floating-contact>svg{color:#ffe08b}.nav-cta{color:#ffe08b}.button-gold:hover,.nav-cta:hover,.floating-contact:hover{background:#254760;color:#fff9e8}
+.home-secondary-cta:hover,.nav-links a:hover,.direct-contact>a:hover,.footer-legal a:hover{color:var(--gold-text)}
+.narration-button>svg,.transcript-button:hover,.business-service-card .service-card-top>svg,.service-deliverables svg,.principle-grid svg,.principle-grid article>div>span,.contact-arrow{color:var(--gold-text)}
+.narration-button{border-color:#bdad88}.voice-language{border-color:var(--gold-border)}.narration-transcript{border-color:var(--brand-gold)}
+.portrait-gallery{border-color:var(--gold-border)}.portrait-connect{background:var(--brand-navy);color:#fff4cf}.studio-gallery .portrait-connect{color:var(--brand-navy);border-color:var(--gold-border);background:#fffaf0ed}.studio-caption{background:linear-gradient(transparent,#fbf8f1ed)}
+.business-service-card.chapter-active{border-color:var(--gold-metal);box-shadow:0 12px 40px #b070000c}.service-filters button.active{background:var(--brand-navy);border-color:var(--brand-navy)}
+.solution-index>button.is-active{background:var(--gold-soft)!important;color:var(--brand-navy)!important}.journey-route button.selected>span{background:var(--brand-navy);border-color:var(--brand-navy);color:#fff4cf}.journey-token{background:linear-gradient(135deg,#fff0b8,#e7c36f);color:var(--brand-navy);border:1px solid #cf9b3040}.journey-rings i{border-color:var(--gold-border)}.journey-artifact{border-color:var(--gold-border)}
+.company-principles{background:#f7f0df}.company-finale{background:radial-gradient(ellipse at 20% 50%,#f2deb0,transparent 43%),#f6eedc}.finale-orb{border-color:#c8973c;background:#fffbef;color:var(--brand-navy);box-shadow:0 0 0 25px #fff9e955,0 0 0 60px #fff9e933}.finale-orb:hover{background:#f6df9d}
+.form-field input:focus-visible,.form-field select:focus-visible,.form-field textarea:focus-visible{outline-color:var(--brand-gold)}button:focus-visible,a:focus-visible{outline-color:var(--gold-text)}::selection{background:#ffe6a0;color:var(--brand-navy)}
