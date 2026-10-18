@@ -1,9 +1,9 @@
 /* Canonical palette derived from the supplied metallic logo.
    Logo amber/shadows: #B07000 / #905000. Highlights: #FFD040.
    Use the deeper gold for readable text; reserve highlights for decoration. */
-:root{--brand-navy:#183048;--brand-gold:#b07000;--gold-text:#945800;--gold-metal:#c38b16;--gold-highlight:#ffd040;--gold-soft:#fff1c4;--gold-border:#b0700038;--ink:#183048;--gold:#b07000;--paper:#fbf8f1;--brand-ivory:#fbf8f1;--brand-muted:#596b70}
+:root{--brand-navy:#183048;--brand-gold:#d4a129;--gold-text:#183048;--gold-metal:#d4a129;--gold-highlight:#ffdf76;--gold-soft:#fff3ce;--gold-border:#c9972838;--ink:#183048;--gold:#d4a129;--paper:#fbf8f1;--brand-ivory:#fbf8f1;--brand-muted:#596b70}
 .home-hero h1,.section-heading h2,.company-intro h2,.principles-heading h2,.faq-section h2,.contact h2,.company-finale h2,.business-service-card h3,.portrait-credit strong,.journey-title h4{color:var(--brand-navy)}
-.home-hero h1>span{color:var(--gold-text);background:linear-gradient(105deg,#8e5100 0%,#b47700 48%,#925300 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
 h2 em,.section-light h2 em,.contact h2 em,.company-finale h2 em,.company-promise strong{color:var(--gold-text)}
 .home-hero .eyebrow,.portrait-credit small,.journey-title small,.journey-detail>span,.solution-console-caption>span,.business-problem>span,.studio-caption{color:var(--gold-text)}
 .section-label,.section-light .section-label,.contact .section-label,.contact-dot,.service-card-top,.business-service-card .service-card-top{color:var(--brand-muted)}
@@ -18,3 +18,13 @@ h2 em,.section-light h2 em,.contact h2 em,.company-finale h2 em,.company-promise
 .solution-index>button.is-active{background:var(--gold-soft)!important;color:var(--brand-navy)!important}.journey-route button.selected>span{background:var(--brand-navy);border-color:var(--brand-navy);color:#fff4cf}.journey-token{background:linear-gradient(135deg,#fff0b8,#e7c36f);color:var(--brand-navy);border:1px solid #cf9b3040}.journey-rings i{border-color:var(--gold-border)}.journey-artifact{border-color:var(--gold-border)}
 .company-principles{background:#f7f0df}.company-finale{background:radial-gradient(ellipse at 20% 50%,#f2deb0,transparent 43%),#f6eedc}.finale-orb{border-color:#c8973c;background:#fffbef;color:var(--brand-navy);box-shadow:0 0 0 25px #fff9e955,0 0 0 60px #fff9e933}.finale-orb:hover{background:#f6df9d}
 .form-field input:focus-visible,.form-field select:focus-visible,.form-field textarea:focus-visible{outline-color:var(--brand-gold)}button:focus-visible,a:focus-visible{outline-color:var(--gold-text)}::selection{background:#ffe6a0;color:var(--brand-navy)}
+
+/* Match the logo’s polished gold finish, rather than its brown shadow sample. */
+:root{--gold-finish:linear-gradient(178deg,#fff0a0 0%,#ffda64 22%,#edb52d 39%,#b67a0d 51%,#f4c84f 63%,#d6a02a 81%,#98600c 100%)}
+:is(.home-hero h1>span,h2 em,.company-promise strong){color:#c99520;background:var(--gold-finish);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-text-stroke:.35px #a27620;filter:drop-shadow(0 1px 0 #fff4c3);text-shadow:none}
+.home-hero .eyebrow,.portrait-credit small,.journey-title small,.journey-detail>span,.solution-console-caption>span,.business-problem>span{color:#53687a}
+.narration-button>svg,.service-deliverables svg,.principle-grid svg,.principle-grid article>div>span,.contact-arrow,.business-service-card .service-card-top>svg{color:#bb871c}
+.nav-cta{color:#ffdd73}.button-gold>svg,.nav-cta>svg,.floating-contact>svg,.floating-call>svg{color:#ffdd73}
+.journey-token{background:linear-gradient(135deg,#fff4bd,#efc85b);border-color:#d5a33355}.solution-index>button.is-active{background:#fff0bd!important}.business-service-card.chapter-active{border-color:#cf9a27}.finale-orb{border-color:#d5a333}.finale-orb:hover{background:#ffe9a2}
+@media(forced-colors:active){:is(.home-hero h1>span,h2 em,.company-promise strong){background:none;-webkit-text-fill-color:CanvasText;-webkit-text-stroke:0;filter:none;color:CanvasText}}
+.eyebrow,.company-finale .eyebrow,.company-intro .eyebrow,.company-principles .eyebrow,.faq-section .eyebrow,.contact .eyebrow,.approach .eyebrow{color:#53687a}

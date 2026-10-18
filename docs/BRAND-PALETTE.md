@@ -1,7 +1,7 @@
-# Logo-matched palette
+# Logo-matched metallic gold
 
-The supplied metallic logo contains multiple gold tones. Pixel sampling found frequent amber shadow values near #A06000 and #B07000, alongside bright yellow highlights near #FFD040. A metallic logo cannot be represented by one flat text color while preserving both appearance and contrast.
+The previous palette sampled the logo's dark amber shadows too heavily, making large text look brown. The current finish instead follows the complete metallic range: champagne #FFF0A0, yellow-gold #FFDA64, mid-gold #EDB52D and #D6A02A, with narrow bronze shadow bands #B67A0D and #98600C.
 
-The final stylesheet src/styles/brand-palette.css centralizes the palette: navy #183048, base gold #B07000, readable text gold #945800, decorative gold #C38B16, highlight #FFD040 and ivory #FBF8F1. Main headings and body text use navy; gold is reserved for emphasis, icons, selected states and details. Bright logo highlights are not used for small text on ivory.
+All large emphasized headings and the company promise use the same --gold-finish gradient. A subtle .35px gold edge defines the lettering on ivory. The logo artwork is unchanged. Small labels and normal text use navy; bright gold is reserved for large emphasis and decorative details. No contrast claim is made for every gradient stop. Forced-colors mode uses the system text color.
 
-The logo image itself is preserved. The seated AI-assisted founder portrait is included in the same update; its reference, originals and exact generation prompt are retained in source.
+The flat accent token is #D4A129, the highlight is #FFDF76 and the soft selection fill is #FFF3CE. src/styles/brand-palette.css owns the final treatment. This supersedes the earlier flat #945800 text-gold approach.
