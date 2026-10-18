@@ -10,3 +10,4 @@ test-results/
 .sites-api-backup/
 site-preview.tar.gz
 .openai/local/
+.preview-build/
