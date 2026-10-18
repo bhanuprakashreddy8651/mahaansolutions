@@ -22,52 +22,52 @@
     {
       "width": 1440,
       "section": "showcase",
-      "gap": 20.375
+      "gap": 19.859375
     },
     {
       "width": 1440,
       "section": "approach",
-      "gap": 20.203125
+      "gap": 19.6875
     },
     {
       "width": 1024,
       "section": "about",
-      "gap": 20
+      "gap": 19.984375
     },
     {
       "width": 1024,
       "section": "expertise",
-      "gap": 20
+      "gap": 19.984375
     },
     {
       "width": 1024,
       "section": "showcase",
-      "gap": 20.375
+      "gap": 20.359375
     },
     {
       "width": 1024,
       "section": "approach",
-      "gap": 20.484375
+      "gap": 20.46875
     },
     {
       "width": 390,
       "section": "about",
-      "gap": 16.328125
+      "gap": 15.546875
     },
     {
       "width": 390,
       "section": "expertise",
+      "gap": 15.578125
+    },
+    {
+      "width": 390,
+      "section": "showcase",
       "gap": 16.359375
     },
     {
       "width": 390,
-      "section": "showcase",
-      "gap": 15.84375
-    },
-    {
-      "width": 390,
       "section": "approach",
-      "gap": 15.765625
+      "gap": 16.09375
     }
   ],
   "errors": []

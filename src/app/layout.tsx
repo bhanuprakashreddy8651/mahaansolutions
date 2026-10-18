@@ -6,6 +6,7 @@ import '@/styles/editorial-experience.css';
 import '@/styles/brand-palette.css';
 import '@/styles/navigation-polish.css';
 import '@/styles/portrait-layout.css';
+import '@/styles/compact-spacing.css';
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title:{default:'Mahaan Solutions — Your Vision. Our Solutions.', template:'%s | Mahaan Solutions'},

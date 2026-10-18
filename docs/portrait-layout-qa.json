@@ -10,25 +10,25 @@
     {
       "width": 1279,
       "height": 648,
-      "imageBottom": 547.578125,
+      "imageBottom": 562.578125,
       "fit": "contain"
     },
     {
       "width": 1440,
       "height": 900,
-      "imageBottom": 757.1875,
+      "imageBottom": 726.1875,
       "fit": "contain"
     },
     {
       "width": 1024,
       "height": 600,
-      "imageBottom": 499.578125,
+      "imageBottom": 514.578125,
       "fit": "contain"
     },
     {
       "width": 390,
       "height": 844,
-      "imageBottom": 1182.53125,
+      "imageBottom": 1068.75,
       "fit": "contain"
     }
   ],
