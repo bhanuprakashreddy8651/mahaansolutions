@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <title>Mahaan Solutions</title>
+  <defs>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#47769a"/><stop offset=".45" stop-color="#183c5c"/><stop offset="1" stop-color="#071d32"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#fff0a0"/><stop offset=".35" stop-color="#f7cf59"/><stop offset=".65" stop-color="#d6a026"/><stop offset="1" stop-color="#94600c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" rx="210" fill="#fffaf0"/>
+  <g transform="translate(100 150) scale(.85)" stroke-linejoin="round">
+    <path d="M8 162 145 280V785H8Z M148 8 242 96V785H148Z M704 96 795 8V260L704 350Z M844 405 935 318V785H844Z" fill="url(#navy)" stroke="#09253e" stroke-width="12"/>
+    <path d="M282 99 475 350 657 109V385L578 464V327L475 483 365 326V648L282 566Z" fill="url(#gold)" stroke="#a67616" stroke-width="12"/>
+    <path d="M390 525 475 650 935 166V785H844V341L475 785 390 692Z" fill="url(#navy)" stroke="#09253e" stroke-width="12"/>
+    <g fill="none" stroke-width="9" opacity=".8">
+      <path d="M19 184 130 281V769M160 33 227 100V766M716 104 781 38V251M404 550 475 673 919 199" stroke="#7396b4"/>
+      <path d="M294 126 475 370 645 137V379M294 162V557L351 611" stroke="#fff2a3"/>
+    </g>
+  </g>
+</svg>
