@@ -12,62 +12,62 @@
     {
       "width": 1440,
       "section": "about",
-      "gap": 19.984375
+      "gap": 19.5
     },
     {
       "width": 1440,
       "section": "expertise",
-      "gap": 19.578125
+      "gap": 19.875
     },
     {
       "width": 1440,
       "section": "showcase",
-      "gap": 19.859375
+      "gap": 20.09375
     },
     {
       "width": 1440,
       "section": "approach",
-      "gap": 19.6875
+      "gap": 20.03125
     },
     {
       "width": 1024,
       "section": "about",
-      "gap": 19.984375
+      "gap": 19.875
     },
     {
       "width": 1024,
       "section": "expertise",
-      "gap": 19.984375
+      "gap": 19.65625
     },
     {
       "width": 1024,
       "section": "showcase",
-      "gap": 20.359375
+      "gap": 19.59375
     },
     {
       "width": 1024,
       "section": "approach",
-      "gap": 20.46875
+      "gap": 19.8125
     },
     {
       "width": 390,
       "section": "about",
-      "gap": 15.546875
+      "gap": 16.21875
     },
     {
       "width": 390,
       "section": "expertise",
-      "gap": 15.578125
+      "gap": 16.375
     },
     {
       "width": 390,
       "section": "showcase",
-      "gap": 16.359375
+      "gap": 15.640625
     },
     {
       "width": 390,
       "section": "approach",
-      "gap": 16.09375
+      "gap": 15.96875
     }
   ],
   "errors": []

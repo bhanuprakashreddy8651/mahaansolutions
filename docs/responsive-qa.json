@@ -1,0 +1,112 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "height": 568,
+      "heroWidth": 320,
+      "portraitWidth": 278,
+      "copyLeft": 20,
+      "overflow": 0
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "heroWidth": 360,
+      "portraitWidth": 318,
+      "copyLeft": 20,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "heroWidth": 390,
+      "portraitWidth": 348,
+      "copyLeft": 20,
+      "overflow": 0
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "heroWidth": 430,
+      "portraitWidth": 388,
+      "copyLeft": 20,
+      "overflow": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "heroWidth": 768,
+      "portraitWidth": 294.65625,
+      "copyLeft": 38.390625,
+      "overflow": 0
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "heroWidth": 820,
+      "portraitWidth": 315.703125,
+      "copyLeft": 41,
+      "overflow": 0
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "heroWidth": 1024,
+      "portraitWidth": 398.34375,
+      "copyLeft": 51.1875,
+      "overflow": 0
+    },
+    {
+      "width": 1280,
+      "height": 640,
+      "heroWidth": 1280,
+      "portraitWidth": 478,
+      "copyLeft": 64,
+      "overflow": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "heroWidth": 1366,
+      "portraitWidth": 478,
+      "copyLeft": 68.296875,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "heroWidth": 1440,
+      "portraitWidth": 478,
+      "copyLeft": 80,
+      "overflow": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "heroWidth": 1920,
+      "portraitWidth": 478,
+      "copyLeft": 320,
+      "overflow": 0
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "heroWidth": 2560,
+      "portraitWidth": 478,
+      "copyLeft": 640,
+      "overflow": 0
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "no horizontal overflow",
+    "natural scrolling without hero clipping",
+    "uncropped portrait",
+    "width-led desktop columns",
+    "tablet and mobile nav",
+    "service journey",
+    "call button",
+    "16px form input",
+    "portrait viewer"
+  ]
+}
