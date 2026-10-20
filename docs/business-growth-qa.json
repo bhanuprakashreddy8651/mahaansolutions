@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "height": 632,
+      "controlsBottom": 531.875
+    },
+    {
+      "width": 1366,
+      "height": 650,
+      "controlsBottom": 540.875
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "controlsBottom": 624.921875
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "controlsBottom": 809.1875
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "controlsBottom": 612.328125
+    }
+  ],
+  "errors": []
+}

@@ -22,12 +22,12 @@
     {
       "width": 1440,
       "section": "showcase",
-      "gap": 20.09375
+      "gap": 20.28125
     },
     {
       "width": 1440,
       "section": "approach",
-      "gap": 20.03125
+      "gap": 20.21875
     },
     {
       "width": 1024,
@@ -42,12 +42,12 @@
     {
       "width": 1024,
       "section": "showcase",
-      "gap": 19.59375
+      "gap": 19.765625
     },
     {
       "width": 1024,
       "section": "approach",
-      "gap": 19.8125
+      "gap": 19.984375
     },
     {
       "width": 390,
@@ -62,12 +62,12 @@
     {
       "width": 390,
       "section": "showcase",
-      "gap": 15.640625
+      "gap": 16.03125
     },
     {
       "width": 390,
       "section": "approach",
-      "gap": 15.96875
+      "gap": 16.359375
     }
   ],
   "errors": []

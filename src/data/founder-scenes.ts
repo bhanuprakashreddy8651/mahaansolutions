@@ -1,13 +1,13 @@
 /** Add reviewed Google Flow exports here. Empty sources intentionally use the poster + optional browser narration. */
 export const founderScenes = {
   intro: { title: 'Meet the founder', poster: '/images/founder/guide.webp', video: '', captions: '',
-    script: "Hello, I'm Pulluru Bhanu Prakash Reddy, founder of Mahaan Solutions Private Limited. We bring digital marketing, CRM development and maintenance, and software development together around your vision. If you’d like to explore our services, scroll down and take a look." },
+    script: "Hello, I'm Pulluru Bhanu Prakash Reddy, founder of Mahaan Solutions Private Limited. We bring digital marketing, software development, and business development together around your vision. If you’d like to explore our services, scroll down and take a look." },
   'software-development': { title: 'Software development', poster: '/images/founder/guide.webp', video: '', captions: '',
-    script: 'Have an idea for a digital product? Let’s build software around your business.' },
+    script: 'Have an idea for a digital product? Let’s build software around your business, including custom CRM development and maintenance.' },
   'digital-marketing': { title: 'Digital marketing', poster: '/images/founder/guide.webp', video: '', captions: '',
     script: 'Let’s make your business easier to discover, with digital marketing shaped around your audience.' },
-  'crm-development-and-maintenance': { title: 'CRM development & maintenance', poster: '/images/founder/guide.webp', video: '', captions: '',
-    script: 'Let’s connect your customer information with CRM development and maintenance that supports your team.' },
+  'business-development': { title: 'Business development', poster: '/images/founder/guide.webp', video: '', captions: '',
+    script: 'Let’s identify your next growth opportunity, refine your offer, and plan customer outreach and a clearer sales process.' },
   closing: { title: 'Your next chapter', poster: '/images/founder/closing.webp', video: '', captions: '',
     script: 'Your next chapter starts with a conversation. Tell me what you want to build. Your vision. Our solutions. Let’s explore the possibilities together.' },
 };
