@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   description:'Explore Mahaan Solutions. A considered approach to digital experiences, creative ideas, and business possibilities. Discover our service preview and start a conversation.',
   icons: {
     icon: [
-      {url:'/favicon.ico', sizes:'16x16 32x32 48x48', type:'image/x-icon'},
-      {url:'/icon.svg', sizes:'any', type:'image/svg+xml'},
-      {url:'/icon-192.png', sizes:'192x192', type:'image/png'},
-      {url:'/icon-512.png', sizes:'512x512', type:'image/png'},
+      {url:'/favicon.ico?v=original-logo', sizes:'16x16 32x32 48x48', type:'image/x-icon'},
+      {url:'/icon-32.png?v=original-logo', sizes:'32x32', type:'image/png'},
+      {url:'/icon-192.png?v=original-logo', sizes:'192x192', type:'image/png'},
+      {url:'/icon-512.png?v=original-logo', sizes:'512x512', type:'image/png'},
     ],
-    apple: [{url:'/apple-touch-icon.png', sizes:'180x180', type:'image/png'}],
+    apple: [{url:'/apple-touch-icon.png?v=original-logo', sizes:'180x180', type:'image/png'}],
   },
   openGraph:{title:'Mahaan Solutions',description:'Your Vision. Our Solutions.',images:['/images/founder.webp']},
   robots: process.env.NEXT_PUBLIC_SITE_URL ? {index:true,follow:true} : {index:false,follow:false},
